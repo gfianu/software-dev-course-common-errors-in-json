@@ -99,3 +99,53 @@ const invalidBookingJSON = `
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
    (e.g., syntax highlighting, linters, writing JSON by example)
 */
+
+// ============================================
+// 🔍 Provided JSON File with Solutions
+// ============================================
+
+const validBookingJSON = 
+{
+  "hotelName": "Grand City Hotel",
+  "checkInDate": "2024-05-15", 
+  "_comment":"Added a comma after the line of code above",
+  "checkOutDate": "2024-05-20",
+  "guests": [
+    {
+      "name": "Alice Johnson",
+      "age": 30,
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "name": "Bob Smith",
+      "_comment":"wrapped the name key above in quotes",
+      "age": "undefined",
+      "_comment":"wrapped the datatype above in quotes",
+      "email": "bob.smith@example"
+    }
+  ],
+  "roomDetails": {
+    "type": "Suite",
+    "pricePerNight": 200,
+    "amenities": ["WiFi", "Breakfast", "Parking"],
+    "_comment":"Removed a comma after the element in the array above"
+  }
+}
+
+/*
+💬 Reflect and answer the following:
+
+1️⃣ What tools or techniques did you use to identify the errors?
+I first examined the JSON and corrected the errors I could find,
+then I used a JSON validator to catch any errors that I missed.
+
+2️⃣ How did you confirm that your corrected JSON file was valid?
+I confirmed it with the JSON validator.
+
+3️⃣ Which errors were the most difficult to spot? Why?
+The invalid data types and the name key that was wrapped in quotes.
+
+4️⃣ What strategies can help you avoid these kinds of errors in the future?
+   (e.g., syntax highlighting, linters, writing JSON by example)
+  You could always check your JSON file with a JSON validator. 
+*/
